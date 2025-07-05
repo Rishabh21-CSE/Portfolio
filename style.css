@@ -1,0 +1,481 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;;
+    background-image: url(images/pexels-danbuilds-633409.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    background-color: #1a1a2e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    padding: 15px 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+    /* background-color: ; */
+}
+.navbar a{
+    text-decoration: none;
+    color: #00ffff;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    animation: glow 1.5s infinite alternate;
+}
+.navbar a:hover{
+    text-shadow: 0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+    transform: scale(1.05);
+}
+@keyframes glow{
+    0%, 100%{
+        text-shadow: 0 0 5px #00ffff;
+    }
+    50%{
+        text-shadow: 0 0 20px #00ffff;
+    }
+}
+
+
+.Header {
+    text-align: center;
+    /* background-color: rgb(156, 120, 67); */
+    border-radius: 5px;
+    padding: 15px;
+}
+.Header h1 {
+    color:aqua;
+}
+.Header h2{
+    color:aqua;
+}
+.typing{
+    display: inline-block;
+    border-right: 2px solid #00f;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(20, end) forwards, blink 0.7s step-end infinite;
+}
+@keyframes typing{
+    from {width:0} to {width: 22ch; }
+}
+@keyframes blink{
+    50%{border-color: transparent}
+}
+
+
+section{
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px ;
+    max-width: 800px
+    rgba(0,0,0,0.1);
+}
+.section-box{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+#About p, h1{
+    color:rgb(177, 76, 39);
+
+}
+#About{
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+
+.projects{
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 100px;
+    text-align: center;
+}
+#projects p{
+    color: #333333;
+}
+#projects h2{
+    text-align: center;
+}
+#projects h3{
+    color: rgb(177, 76, 39);
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+.projects h3,p{
+    text-align: center;
+}
+
+
+#education {
+    background-color: #f0f4f8;
+    text-align: center;
+}
+#education p{
+    color: rgb(177, 76, 39);
+}
+
+
+#contacts h3{
+    color: rgb(177, 76, 39);
+}
+#contacts p{
+    color: blue;
+}
+#contacts h2{
+    text-align: center;
+}
+
+.Email{
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    /* min-height: 100px; */
+    text-align: center;
+}
+.email p{
+    color: blue;
+}
+.github{
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.github a{
+    color: blue;
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px){
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        padding: 20px 10px;
+    }
+    h1,h2{
+        font-size: smaller;
+        text-align: center;
+    }
+}
+
+
+.skills-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.skills-grid img{
+    /* width: 60px;
+    height: 60px; */
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+.skills-grid img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 6px #00ffff);
+}
+
+.skill-item{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    max-width:fit-content;
+}
+.skill-item img{
+    object-fit: contain;
+}
+
+#skill h2{
+    border-bottom: 2px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+#skills h2{
+    text-align: center;
+}
+
+.Buttons button{
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: #00cc66;
+    color: white;
+    text-align: center;
+    border: none;
+    justify-content: center;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: backgound 0.3s ease;
+    font-size: 13px;
+    box-shadow: 0 0 0px transparent;
+    transition: 0.3s ease;
+    min-width: 120px;
+    width: 90%;
+    max-width: 300px;
+    
+}
+
+button:hover{
+    background-color: #00b34a;
+    box-shadow: 0 0 10px #28a745, 0 0 20px #28a745, 0 0 30px #28a745;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #121212;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+
+
+}
+.Buttons a{
+    text-decoration: none;
+}
+
+
+
+/* CSS of Projects.html */
+
+.ecosphere {
+    text-align: center;
+    margin: 30px auto;
+    padding: 50px;
+    max-width: 70%;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: rgb(177, 76, 39);
+
+}
+#ecosphere{
+    margin-bottom: 100px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    /* size: 20px 40px; */
+    align-items: center;
+    margin-left: 20px;
+    max-width: 100%;
+}
+.images img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.images img:hover{
+    transform: scale(1.05);
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+#ecosphere{
+    background-image: url(images/pexels-padrinan-1111318.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ecosphere h2{
+    color: #121212;
+}
+#ecosphere h1{
+    text-align: center;
+    /* background-color: #1a1a2e; */
+    
+}
+
+
+/* Certificates CSS */
+
+.certificates1 img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 15px;
+    background-color: rgb(34, 32, 32); */
+}
+.certificates1 h2{
+    font-size: 14px;
+    color: #ddd;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.certificates1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    color: #f0f4f8;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+.certificates1{
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+/* @media (max-width:600px){
+    .certificates1{
+        padding: 10px;
+    }
+    .certificates1 img{
+        width: 100%;
+        max-width: 90vw;
+    }
+} */
+
+@media (max-width: 480px) {
+    .Buttons{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .Buttons button{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 768px){
+    .Buttons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* .certificates1 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+} */
+#certificates h1{
+    text-align: center;
+    font-size: 28px;
+    color: #ff4c29;
+    margin-bottom: 20px; 
+}
+#certificates{
+     background-color: rgb(34, 32, 32);
+     padding: 40px 20px;
+}
+.info{
+    text-align: center;
+    font-size: 16px;
+    color: #cccccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.bottom-buttons{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+body{
+    padding-bottom: 80px;
+}
+
+
+/* social media css */
+.Social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+.Social img{
+    width: 80px;
+    /* max-width: 80px; */
+    object-fit: contain;
+    height: 80px;
+    /* border-radius: 8px; */
+    /* margin-bottom: 10px; */
+    transition: transform 0.3s ease;
+}
+.Social img:hover{
+    transform: scale(1.1);
+}
+.Social h2{
+    margin-top: 8px;
+    font-weight: bold;
+}
