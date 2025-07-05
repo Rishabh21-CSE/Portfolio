@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISHABH'S Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="Header">
+    <h1><span class="typing">Hi! I'm RISHABH MISHRA</h1>
+    <h2>Welcome to my Portfolio</span></h2>
+    </div>
+    <section id="About" class="section-box" data-aos="fade-left" data-aos-delay="700" data-aos-duration="2500">
+        <h2>About me</h2>
+        <p>I am from Balrampur (Uttar Pradesh), a CSE student with interest in building web apps and learning new technologies.</p>
+    </section>
+    <section id="skills" class="section-box" data-aos="right" data-aos-delay="700" data-aos-duration="2000">
+        <h2>Skills</h2>
+        
+        <div class="skills-grid ">
+            <div class="skill-item">
+                <img src="images/icons8-python-48.png" alt="Python" title="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+            <img src="images/icons8-html-48.png" alt="HTML" title="HTML">
+            <p>HTML</p>
+            </div>
+            <div class="skill-item">
+            <img src="images/icons8-css-48.png" alt="CSS" title="CSS">
+            <p>CSS</p>
+            </div>
+            <div class="skill-item">
+            <img src="images/icons8-javascript-48.png" alt="JavaScrip" title="JavaScript">
+            <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+            <img src="images/icons8-c-48.png" alt="C" title="C">
+            <p>C</p>
+            </div>
+            <div class="skill-item">
+            <img src="images/icons8-c-48-2.png" alt="C++" title="C++">
+            <p>C++</p>
+            </div>
+            <div class="skill-item">
+            <img src="images/icons8-microsoft-access-2019-48.png" alt="DBMS" title="DBMS">
+            <p>DBMS</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="projects" class="section-box" data-aos="fade-left" data-aos-delay="500" data-aos-duration="2000">
+        <h2>Projects</h2>
+        <div class="projects">
+            <h3>  EcoSphere</h3>
+            <p>   A carbon footprint calculator that lets users track waste, set eco-goals, and view their footprint trends using interactive graph.</p>
+        </div>
+    </section>
+    <section id="education" class="section-box" data-aos="fade-right" data-aos-delay="500" data-aos-duration="2000">
+        <h2>Education</h2>
+        <div class="education">
+        <p><b>B.Tech</b> in Computer Science and Engineering, Lovely Professional University, 2028</p>
+        <p><b>Intermediate</b>, Adi Shakti Ma Pateshwari Public School, 2023</p>
+        <p><b>Matriculation</b>, Adi Shakti Ma Pateshwari Public School, 2021</p>
+        </div>
+    </section>
+    <section id="contacts" class="section-box" data-aos="fade-left" data-aos-delay="500" data-aos-duration="2000">
+        <h2>Contacts</h2>
+        <div class="Email">
+            <h3>Email</h3>
+            <p>rishabhcse123@gmail.com</p>
+        </div>
+        <div class="github">
+            <h3>Github</h3>
+            <a href="https://github.com/Rishabh21-CSE">github.com/Rishabh21-CSE</a>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<div class="Buttons">
+<button onclick="goToProjects()">See my Projects</button>
+<button onclick="goToCertificates()">See my Certificates</button>
+<button onclick="goToSocialPlatform()">Social Media</button>
+<a href="My CV (1).pdf" target="_blank"><button>My Resume</button></a>
+<a href="My CV (1).pdf" download><button>Download Resume</button></a>
+</div>
+
+<script>
+    function goToProjects(){
+        window.location.href="projects.html";
+    }
+</script>
+<script>
+    function goToCertificates(){
+        window.location.href="certificates.html";
+    }
+</script>
+<script>
+    function goToSocialPlatform(){
+        window.location.href="social.html";
+    }
+</script>
+</body>
+<link rel="stylesheet" href="style.css">
+</html>
